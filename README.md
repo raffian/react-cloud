@@ -1,7 +1,7 @@
 react-cloud
 ===========
 
-Self-service web console exposing application capabilties such as messaging, caching, and monitoring, to quickly register and leverage such services.
+Provisioning platform offering self-serviceable application features such as messaging, caching, and monitoring.
 
 
 ## App Console
@@ -15,10 +15,10 @@ Lists all of your active applications and active versions.
 
 
 ## Messaging-as-a-Service
-Generate real-time events from structured and unstructured sources; create follow-up actions, such as send an email, evict acache item, etc., when those events occur. Completely configurable from console, no programmatic overhead required.
+Generate real-time events from structured and unstructured sources; create follow-up actions, such as sending an email, evicting cache items, etc., when those events occur. Completely configurable from console, no programmatic overhead required.
 
 #### Define an Event
-Source an event from anywhere; example below demonstrates event sourcing using a simple database poller. Messenger will query the table indefinitely, converting each row into an event. 
+Source an event from anywhere; example below generates events from an Oracle database using a simple poller. The system queries/polls the table indefinitely, converting each row into an event, then sleeps until the next poll.  
 <p>
 <a href="http://www.nextideapartners.com/site/images/git/new-event.png"><img src="http://www.nextideapartners.com/site/images/git/new-event.png" /></a>
 <p>
